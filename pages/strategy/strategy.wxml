@@ -1,0 +1,38 @@
+<view class="container">
+  <view class='top-gap'></view>
+  <view class="top-cnt border-bottom-gap">
+    <view class="name-item">
+      <text class='strategy-name titleFont'>{{name}}</text>
+      <view><text wx:for="{{tags}}" class='tag-label'>{{item}}</text></view>
+    </view>
+    <button class="subscribe bgBlue">立即订阅</button>
+  </view>
+  
+  <view class='capacity-cnt'>
+    <view class='capacity-item border-bottom'>
+      <view class='ver-gap titleFont'>策略统计</view>
+    </view>
+  </view>
+  <ec-canvas id="mychart-dom-bar" canvas-id="mychart-bar" ec="{{ ec }}"></ec-canvas>
+  <view class='chart-sel-cnt'>
+    <text bindtap='bindChartSel' class="chart-sel border-style {{item.id}} {{chartSel===item.id?'active':''}}" wx:for="{{chartSels}}" data-id='{{item.id}}'>{{item.name}}</text>
+  </view>
+  <view class='strategy-info-cnt border-bottom-gap'>
+    <view class='strategy-info-item' wx:for="{{strategy_info}}">
+      <text class='greyColor'>{{item.name}}</text>
+      <text>{{item.value}}</text>
+    </view>
+  </view>
+
+  <view class='detail-cnt'>
+    <view class='sub-page-sel border-bottom'>
+      <text class="sub-page-text titleFont {{currentSubPage===item.id?'active':''}}" wx:for="{{sub_pages}}" 
+      data-sub-page="{{item.id}}" bindtap='bindSubPageTap'>{{item.name}}</text>
+    </view>
+    <view class='desc-cnt' wx:if="{{currentSubPage === 'desc'}}"><text class='desc-txt'>{{desc}}</text></view>
+    <view class='instruction-cnt' wx:if="{{currentSubPage === 'instruction'}}"></view>
+    <view class='comment-cnt' wx:if="{{currentSubPage === 'comment'}}"></view>
+  </view>
+  
+  
+</view>

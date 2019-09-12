@@ -1,0 +1,52 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  font-size: 28rpx;
+} 
+.top-gap{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  border-top: 1rpx solid #e5e5e5;
+}
+.title{
+  font-size: 34rpx;
+}
+.red{
+  color: #f55253;
+}
+.green{
+  color: #41cd4b;
+}
+.greyColor{
+  color: #9e9e9e;
+}
+.right{
+  float: right;
+}
+.bgBlue{
+  font-size: 28rpx;
+  color: white;
+  background-color: #2e90e7;
+  padding:0;
+  height:74rpx;
+  width:160rpx;
+  text-align:center;
+}
+.border-bottom-gap{
+  border-bottom: 20rpx solid #e5e5e5;
+}
+.border-bottom{
+  border-bottom: 1rpx solid #e5e5e5;
+}
+.border-style{
+  border: 1rpx solid #e5e5e5;
+}
+.titleFont{
+  font-size: 34rpx;
+}

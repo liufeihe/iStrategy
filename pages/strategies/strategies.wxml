@@ -1,0 +1,28 @@
+<progress percent="{{percent}}" wx:if="{{percent<=100}}" stroke-width="2" activeColor="#2e90e7" />
+
+<view class='container ' wx:if="{{percent>100}}">
+
+<scroll-view scroll-x="true" scroll-with-animation="true">
+  <view class='tag-list'>
+  <text class="tag-sel {{currentTag===item?'active':''}}" wx:for='{{tags}}' bindtap="bindTagTap" data-tag="{{item}}">{{item}}</text>
+  </view>
+</scroll-view>
+
+<view class="strategy-list">
+  <view class="strategy-item" bindtap="bindStrategyTap"
+   wx:for="{{currentStrategies}}" wx:key="id" data-id='{{item.id}}' data-name="{{item.name}}">
+    <view class="top-item title">
+      <view class='left-item'>
+        <view class='strategy-name'>{{item.name}}</view>
+        <view class='tag-labels'><block wx:for="{{item.tag}}" wx:if="{{index<1}}"><text class='tag-label'>{{item}}</text></block></view>
+      </view>
+      <view class='right-item {{item.color}}'>{{item.real_return}}</view>
+    </view>
+    <view class='bottom-item greyColor'>
+      <view class='strategy-desc'>{{item.desc}}</view>
+      <view class='right-item txt'>实盘收益</view>
+    </view>
+  </view>
+</view>
+
+</view>

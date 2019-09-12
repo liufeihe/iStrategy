@@ -1,0 +1,34 @@
+{
+  "pages": [
+    "pages/strategies/strategies",
+    "pages/strategy/strategy",
+    "pages/profile/profile",
+    "pages/user/user"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarTitleText": "",
+    "navigationBarBackgroundColor": "white",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#000",
+    "selectedColor": "#2e90e7",
+    "borderStyle": "black",
+    "list": [
+      {
+        "iconPath": "images/tabbar_strategies.png",
+        "selectedIconPath": "images/tabbar_strategies_selected.png",
+        "pagePath": "pages/strategies/strategies",
+        "text": "策略列表"
+      },
+      {
+        "iconPath": "images/tabbar_profile.png",
+        "selectedIconPath": "images/tabbar_profile_selected.png",
+        "pagePath": "pages/profile/profile",
+        "text": "个人中心"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

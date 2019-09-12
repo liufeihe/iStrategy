@@ -1,0 +1,113 @@
+.top-cnt{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  padding: 30rpx 0;
+}
+.name-item{
+  margin-left: 40rpx 
+}
+button.subscribe{
+  margin: 0 40rpx 0 0;
+  color: white;
+}
+.tag-label{
+  font-size: 22rpx;
+  margin-right: 20rpx;
+  border: 1rpx solid #e5e5e5;
+  padding: 1rpx 5rpx;
+}
+
+.capacity-cnt{
+  width: 100%;
+  padding: 30rpx 40rpx;
+  box-sizing: border-box;
+}
+.capacity-item{
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  padding-bottom: 20rpx;
+}
+.ver-gap::before{
+  content: '';
+  float: left;
+  width: 10rpx;
+  height: 40rpx;
+  background-color: #2e90e7;
+  margin-right: 15rpx;
+  margin-top: 6rpx;
+}
+
+#mychart-dom-bar{
+  width: 750rpx;
+  height:500rpx;
+}
+.chart-sel-cnt{
+  width: 100%;
+  text-align: right;
+  box-sizing: border-box;
+  padding:10rpx 40rpx;
+}
+text.chart-sel{
+  display:inline-block;
+  width:150rpx;
+  text-align:center;
+  padding: 5rpx 0;
+}
+text.chart-sel.month{
+  border-right: 0;
+}
+text.chart-sel.year{
+  border-right: 0;
+}
+text.chart-sel.active{
+  background-color: #a9a9a9;
+  color: white;
+}
+
+.strategy-info-cnt{
+  display: flex;
+  flex-flow: row wrap;
+  padding: 20rpx 0;
+}
+.strategy-info-item{
+  width: 50%;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  padding:0 40rpx;
+  box-sizing:border-box;
+}
+
+.detail-cnt{
+  width: 100%;
+  min-height: 300rpx;
+}
+.sub-page-sel{
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  padding-top: 20rpx;
+}
+.sub-page-text{
+  margin: 0 20rpx;
+  padding: 10rpx 20rpx;
+  display: inline-block;
+  border-bottom: 1rpx solid white;
+}
+.sub-page-text.active{
+  color: #2e90e7;
+  border-bottom: 1rpx solid #2e90e7;
+}
+
+.desc-cnt{
+  padding: 20rpx 40rpx;
+}
+.instruction-cnt{
+  padding: 20rpx 40rpx;
+}
+.comment-cnt{
+  padding: 20rpx 40rpx;
+}
